@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "878053877400",
+    "project_id": "smartexpensetracker-3050e",
+    "storage_bucket": "smartexpensetracker-3050e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878053877400:android:1c667c870ecc34271ad2ed",
+        "android_client_info": {
+          "package_name": "com.example.smartexpensetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYkh3RAjVSnFJCjN7Ks4TxRqJIBdMsBPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

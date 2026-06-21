@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light"
+    android:padding="20dp">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="22sp"
+            android:textColor="@color/navy"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI Spending Advice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:gravity="center"
+            android:layout_marginEnd="22dp" />
+    </LinearLayout>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get a personalized analysis of your spending habits, powered by AI."
+        android:textColor="@color/text_muted"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Generate Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGetAdvice"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="✨  Analyze My Spending"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:backgroundTint="@color/amber"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Loading indicator -->
+    <ProgressBar
+        android:id="@+id/progressBarAi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Result Card -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/tvAiResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Tap 'Analyze My Spending' to get personalized advice based on your recorded expenses."
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+
+</LinearLayout>
