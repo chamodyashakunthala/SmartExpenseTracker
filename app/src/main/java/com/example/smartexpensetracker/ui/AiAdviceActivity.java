@@ -101,15 +101,8 @@ public class AiAdviceActivity extends AppCompatActivity {
                     String resultText = response.body().candidates.get(0).content.parts.get(0).text;
                     tvAiResult.setText(resultText);
                 } else {
-                    String errorMsg = "Error code: " + response.code();
-                    try {
-                        if (response.errorBody() != null) {
-                            errorMsg += "\n" + response.errorBody().string();
-                        }
-                    } catch (Exception e) {
-                        errorMsg += "\n(Could not read error body)";
-                    }
-                    tvAiResult.setText(errorMsg);
+            
+                    tvAiResult.setText("Sorry , Couldn't get advice right now.Please try again later."");
                 }
             }
 
